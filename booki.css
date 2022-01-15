@@ -189,14 +189,14 @@ input:checked +  label.animaux::before {
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-content: space-around;	
+	
 }
 #hebergements a
 {
 	height: 200px;
-	width: 31%;
+	width: 30%;
 	position: relative;
+	margin: 3% 1%;
 	
 }
 #hebergements img
@@ -261,6 +261,7 @@ i.fas.fa-star
 	height: 133px;
 	position: relative;
 	color: black;	
+	margin: 3% 0;
 }
 #populaires img
 {
@@ -383,7 +384,7 @@ ul
 @media screen and (max-width: 992px){
 	#hebergements a{
 	height: 170px;
-	width: 49%;
+	width: 45%;
 	position: relative;
 	}
 	#populaires a{
