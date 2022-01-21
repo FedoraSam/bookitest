@@ -125,13 +125,14 @@ form{
 	padding: 7px;
 }
 .filtre__selecteur:hover{
-	box-shadow: 5px 5px 10px #F2F2F2;
+	
 	border: solid 3px #0065FC;
 }
 /*------CSS de section hébergement----------*/
 #hebergements_populaires
 {	
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 #hebergements
@@ -409,7 +410,7 @@ ul
 	}
 	header a:hover{
 		border-top: none;
-		padding-top: none;
+		padding-top: 0;
 		border-bottom: none;	
 
 	}
@@ -442,23 +443,30 @@ ul
 		margin-bottom: 10px;
 		margin-left: 0;
 	}
+	
+	
 	#hebergements_populaires{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-content: space-between;
-
 	}
+	
+
 	#hebergements{
 		width: 100%;
 		background-color: white;
 		padding: 0;
+		order: 2;
 	}
 	#populaires{
 		width: 100%;
 		margin-bottom: 10px;
 		border-radius: 0;
 		padding: 0;
+		order: 1;
 	}
-	
+	#populaires a{
+		width: 95%;
+	}
 	.block_hebergement{
 		flex-direction: column;
 		width: 100%;
@@ -468,14 +476,10 @@ ul
 		height: 200px;
 		width: 95%;
 	}
-	#hebergements_populaires a{
-
-		width: 95%;
-	}
-
+	
 	#activites{
 		flex-direction: column;
-		
+		order: 3;
 	}
 	.galerie_images_activites{
 		
